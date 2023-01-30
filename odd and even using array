@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,a[10],i,j;
+clrscr();
+printf("Enter the no. of elements: ");
+scanf("%d",&n);
+printf("Enter the elements: ");
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+printf("The array: ");
+for(i=0;i<n;i++)
+{
+printf("%d\t",a[i]);
+}
+printf("\nThe even numbers are: ");
+for(i=0;i<n;i++)
+{
+if(a[i]%2==0)
+{
+printf("%d\t",a[i]);
+}
+}
+printf("\nThe odd numbers are: ");
+for(i=0;i<n;i++)
+{
+if(a[i]%2==1)
+{
+printf("%d\t",a[i]);
+}
+}
+getch();
+}
